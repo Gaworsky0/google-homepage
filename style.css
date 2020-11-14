@@ -88,10 +88,11 @@ input {
   background-position-y: center;
   position: relative;
 }
+
 #keyboard {
   position: absolute;
   height: 13px;
-  top: 22.5rem;
+  top: 23rem;
   right: 9%;
 }
 
@@ -103,8 +104,8 @@ button {
   margin: 1rem;
   color: rgb(29, 29, 29);
 }
-button:hover{
-    border: 1px solid rgba(116, 115, 115, 0.301);
+button:hover {
+  border: 1px solid rgba(116, 115, 115, 0.301);
 }
 h2 {
   margin: 2rem;
@@ -147,7 +148,7 @@ footer a:hover {
   display: flex;
   justify-content: space-evenly;
   margin: 1rem;
-
+  flex-wrap: wrap;
   text-decoration: none;
 
   list-style: none;
@@ -164,34 +165,39 @@ footer a:hover {
   input {
     max-width: 70rem;
   }
-  footer {
-    min-height: 10vh;
+  main {
+    min-height: 78vh;
   }
+
   .footer-links {
     justify-content: flex-end;
-    align-items: center;
+    order: 2;
+    flex: 1 1 60rem;
   }
   .footer-links-2 {
     justify-content: flex-start;
-    align-items: flex-end;
-    margin-right: 2rem;
+    align-items: center;
+    padding-left: 3rem;
+
+    margin: 0 2rem 0 0;
   }
   li {
     margin-right: 3rem;
   }
 
   .footer {
-    display: inline;
-    margin-bottom: 0em;
+    display: flex;
+
+    justify-content: space-between;
   }
   #keyboard {
     right: 9%;
     top: 22.5rem;
   }
 }
-@media screen and (min-width: 1024px;) {
-
-    #keyboard{
-    right: 25%;
-}
+@media screen and (min-width: 1024px) {
+  #keyboard {
+    right: 27%;
+    top: 23rem;
+  }
 }
