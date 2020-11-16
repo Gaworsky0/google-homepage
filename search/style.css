@@ -1,0 +1,282 @@
+* {
+  margin: 0em;
+  padding: 0em;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+img {
+  height: 1.3rem;
+}
+p {
+  font-size: 1.5rem;
+}
+a {
+  text-decoration: none;
+}
+/* search bar and links */
+
+header a {
+  color: rgba(75, 74, 74, 0.788);
+
+  font-size: 1.4rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.links {
+  max-width: 100%;
+  margin: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+.box1 {
+  background-color: gray;
+  height: 3px;
+  width: 3px;
+  border-radius: 50%;
+}
+.box {
+  background-color: rgb(110, 108, 108);
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 2px;
+  margin-right: 2rem;
+}
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 1px;
+  margin-right: 0.4rem;
+}
+.x {
+  display: inline-block;
+  align-items: center;
+}
+
+.bar1,
+.bar2 {
+  width: 2rem;
+  height: 0.1rem;
+
+  background-color: gray;
+}
+
+.bar1 {
+  transform: rotatez(-45deg);
+}
+.bar2 {
+  transform: rotatez(45deg);
+}
+.bar3 {
+  width: 0.14rem;
+  height: 3.3rem;
+  background-color: rgba(0, 0, 0, 0.158);
+  margin: 0 1.5rem;
+}
+.search {
+  display: flex;
+  margin-left: 3rem;
+  margin-right: auto;
+  align-items: center;
+}
+.search:hover {
+  box-shadow: 0 0 3px 3px rgba(75, 74, 74, 0.144);
+  border-radius: 30px;
+}
+input {
+  border: 1px rgba(0, 0, 0, 0.1) solid;
+  border-radius: 30px;
+  border-right: none;
+  width: 55rem;
+  height: 4rem;
+  margin: auto;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+.search-end {
+  display: flex;
+  align-items: center;
+  border: 1px rgba(0, 0, 0, 0.1) solid;
+  border-radius: 30px;
+  border-left: none;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  height: 4rem;
+}
+.icons {
+  display: flex;
+  justify-content: space-evenly;
+}
+.search-icons {
+  margin-right: 2rem;
+  margin-top: 0.6rem;
+}
+.right-site {
+  display: flex;
+  margin: 1rem;
+  align-items: center;
+}
+.more {
+  position: relative;
+}
+.circle {
+  position: absolute;
+  top: -0.9rem;
+  left: -0.9rem;
+  background-color: rgba(255, 255, 255, 0.247);
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 50%;
+}
+.circle:hover {
+  display: block;
+  position: absolute;
+  top: -0.9rem;
+  left: -0.9rem;
+  background-color: rgba(188, 187, 206, 0.425);
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 50%;
+}
+#logo {
+  height: 3.2rem;
+  margin-right: 2rem;
+}
+.lupa {
+  height: 2rem;
+  margin-top: 0.3rem;
+}
+#user_pic {
+  height: 3rem;
+  border-radius: 50%;
+}
+/* navigation bar */
+
+.wiecej {
+  display: flex;
+  position: absolute;
+  top: -1.3rem;
+  right: -4rem;
+}
+.setting {
+  margin-left: 3.5rem;
+}
+.navigation ul {
+  margin-left: 17em;
+}
+.navigation ul li {
+  display: inline-flex;
+  list-style: none;
+  margin: 1rem;
+  text-align: center;
+  position: relative;
+}
+.navigation img {
+  margin-right: 0.7rem;
+}
+.navigation {
+  border: 1px rgba(0, 0, 0, 0.1) solid;
+  padding-bottom: 1rem;
+  border-top: none;
+}
+.active {
+  color: #1a73e8;
+  font-weight: 500;
+}
+.active-bar {
+  position: absolute;
+  bottom: -2rem;
+  height: 0.3rem;
+  width: 10rem;
+  background-color: #1a73e8;
+}
+
+/* result section */
+main {
+  width: 87%;
+
+  margin-left: auto;
+}
+main h3 {
+  font-weight: 100;
+  color: gray;
+  margin: 1.5rem 0 2.5rem 0;
+  font-size: 1.4rem;
+}
+.search-result {
+  margin-bottom: 4rem;
+}
+.first-line {
+  margin: 1rem 0;
+}
+.result-google {
+  color: gray;
+  font-weight: 500;
+}
+.result-link {
+  color: blue;
+  font-weight: 500;
+}
+.result-name {
+  font-size: 2rem;
+  color: blue;
+  margin-bottom: 1rem;
+}
+.result-description {
+  color: gray;
+}
+.first-sentence {
+  font-weight: 600;
+}
+/* video section */
+.title {
+  display: flex;
+  align-items: center;
+}
+.playbutton {
+  height: 1.7rem;
+  margin-right: 1rem;
+}
+.wideo {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.87);
+}
+.video-block {
+  display: flex;
+  flex-direction: row;
+  border: 1px rgba(0, 0, 0, 0.1) solid;
+  width: 55%;
+  border-radius: 10px;
+  padding: 1rem 1rem 1rem 2rem;
+}
+.video {
+  display: flex;
+}
+.yt-thumbnail {
+  height: 7rem;
+  border-radius: 5px;
+  margin-right: 1.5rem;
+}
+.video-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.video-title {
+  font-weight: 500;
+  font-size: 1.6rem;
+  margin-bottom: 1.6rem;
+}
